@@ -3,6 +3,8 @@ package io.github.tropheusj.magic_8_ball;
 import io.github.tropheusj.magic_8_ball.item.IcosahedronItem;
 import io.github.tropheusj.magic_8_ball.item.IncompleteIcosahedronItem;
 import io.github.tropheusj.magic_8_ball.item.Magic8BallItem;
+import io.github.tropheusj.magic_8_ball.loot.Magic8BallLootModifier;
+import io.github.tropheusj.magic_8_ball.loot.SetRandomPresetFunction;
 import io.github.tropheusj.magic_8_ball.recipe.SpecialRecipeSerializers;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
@@ -15,6 +17,8 @@ import net.minecraft.world.item.Item;
 
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.Rarity;
+
+import net.minecraft.world.level.storage.loot.functions.LootItemFunctionType;
 
 import org.quiltmc.loader.api.ModContainer;
 import org.quiltmc.qsl.base.api.entrypoint.ModInitializer;
@@ -32,6 +36,8 @@ public class Magic8Ball implements ModInitializer {
 	public static final Item INCOMPLETE_ICOSAHEDRON = new IncompleteIcosahedronItem(new QuiltItemSettings().stacksTo(1));
 	public static final Item ICOSAHEDRON_FACE = new Item(new QuiltItemSettings());
 
+	public static final LootItemFunctionType SET_RANDOM_PRESET = new LootItemFunctionType(new SetRandomPresetFunction.Serializer());
+
 	@Override
 	public void onInitialize(ModContainer mod) {
 		Registry.register(BuiltInRegistries.ITEM, id("magic_8_ball"), MAGIC_8_BALL);
@@ -39,6 +45,8 @@ public class Magic8Ball implements ModInitializer {
 		Registry.register(BuiltInRegistries.ITEM, id("icosahedron"), ICOSAHEDRON);
 		Registry.register(BuiltInRegistries.ITEM, id("incomplete_icosahedron"), INCOMPLETE_ICOSAHEDRON);
 		Registry.register(BuiltInRegistries.ITEM, id("icosahedron_face"), ICOSAHEDRON_FACE);
+
+		Registry.register(BuiltInRegistries.LOOT_FUNCTION_TYPE, id("set_random_preset"), SET_RANDOM_PRESET);
 
 		SpecialRecipeSerializers.register();
 
