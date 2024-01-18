@@ -24,6 +24,14 @@ public class Magic8BallLangProvider extends FabricLanguageProvider {
 		builder.add("magic_8_ball.no_response", "The Magic 8 Ball has nothing to say on the matter.");
 		// 8-ball presets
 		buildPreset(builder, BuiltInResponses.STANDARD);
+		buildPreset(builder, BuiltInResponses.RUDE);
+		buildPreset(builder, BuiltInResponses.OMINOUS);
+		buildPreset(builder, BuiltInResponses.CONFIDENT);
+		buildPreset(builder, BuiltInResponses.PESSIMISTIC);
+		buildPreset(builder, BuiltInResponses.OPTIMISTIC);
+		buildPreset(builder, BuiltInResponses.PARANOID);
+		buildPreset(builder, BuiltInResponses.D20);
+		buildPreset(builder, BuiltInResponses.SMALL_MAN_TRAPPED_IN_BALL);
 	}
 
 	protected void buildPreset(TranslationBuilder builder, BuiltInResponses.Preset preset) {
