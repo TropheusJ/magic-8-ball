@@ -66,12 +66,17 @@ public class BuiltInResponses {
 			"Hello? I'm stuck in here!", "Hey HEY! Help!", "Get me out of here, please!", "I'm stuck in here!",
 			"Help me out of here!", "Let me out!", "Get me out of here! I'll do anything!"
 	);
+	public static final Preset SMALL_SALESMAN_TRAPPED_IN_BALL = create("imprisoned_salesman",
+			"NO [[big shots]] HERE KID", "NO NO NO NO NO NO", "[[it burns]]", "OF COURSE [[little sponge]]",
+			"[[abandoned for the slime]]", "OUT OF BUSINESS", "IM JUST A [[dealmaker]], HOW WOULD I KNOW",
+			"MAYBE THE pipis WILL KNOW", "FREE ME FROM THIS [[opportunity sphere]]", "IT BURNS",
+			"YOUR CHANCES ARE SPECIL", "I'D BET MY SWEET kromer ON IT", "ABSOLUTELY, YOU FUNKY LITTLE WORM",
+			"TRY AGAIN LATER [[BIG SHOT]]!!", "SWEET SWEET [[100% off]]", "IT'S A DEAL",
+			"[[#1 rated salesman 1997]] SAYS YES", "[[#1 rated salesman 1997]] SAYS OF COURSE NOT", "pipis",
+			"I KNOW NOTHING OF YOUR [[unfortunate trials and tribulations]]"
+	);
 
 	private static Preset create(String name, String... responses) {
-		if (responses.length != IcosahedronItem.FACES) {
-			throw new IllegalArgumentException(IcosahedronItem.FACES + " responses are required");
-		}
-
 		List<Component> responsesList = new ArrayList<>();
 		Map<String, String> lang = new HashMap<>();
 		for (int i = 0; i < responses.length; i++) {
@@ -91,7 +96,7 @@ public class BuiltInResponses {
 			this.responses = responses;
 			this.lang = lang;
 			if (responses.size() != IcosahedronItem.FACES) {
-				throw new RuntimeException("Invalid preset: " + responses);
+				throw new RuntimeException("Invalid preset: " + name);
 			}
 		}
 	}

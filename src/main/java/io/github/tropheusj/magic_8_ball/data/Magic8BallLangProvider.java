@@ -32,6 +32,7 @@ public class Magic8BallLangProvider extends FabricLanguageProvider {
 		buildPreset(builder, BuiltInResponses.PARANOID);
 		buildPreset(builder, BuiltInResponses.D20);
 		buildPreset(builder, BuiltInResponses.SMALL_MAN_TRAPPED_IN_BALL);
+		buildPreset(builder, BuiltInResponses.SMALL_SALESMAN_TRAPPED_IN_BALL);
 	}
 
 	protected void buildPreset(TranslationBuilder builder, BuiltInResponses.Preset preset) {
