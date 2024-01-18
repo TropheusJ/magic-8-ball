@@ -32,12 +32,12 @@ public class Magic8BallLootModifier implements LootTableEvents.Modify {
 	@Override
 	public void modifyLootTable(ResourceManager resourceManager, LootDataManager lootManager, ResourceLocation id, LootTable.Builder tableBuilder, LootTableSource source) {
 		if (LOOT_TABLES.contains(id)) {
-			CompoundTag nbt = ResponseHolder.create(Magic8Ball.MAGIC_8_BALL, BuiltInResponses.ALL).getTag();
-			tableBuilder.withPool(LootPool.lootPool()
-					.setRolls(ConstantValue.exactly(1))
-					.setBonusRolls(ConstantValue.exactly(0))
-					.add(LootItem.lootTableItem(Magic8Ball.MAGIC_8_BALL)
-							.apply(SetNbtFunction.setTag(nbt))));
+//			CompoundTag nbt = ResponseHolder.create(Magic8Ball.MAGIC_8_BALL, BuiltInResponses.ALL).getTag();
+//			tableBuilder.withPool(LootPool.lootPool()
+//					.setRolls(ConstantValue.exactly(1))
+//					.setBonusRolls(ConstantValue.exactly(0))
+//					.add(LootItem.lootTableItem(Magic8Ball.MAGIC_8_BALL)
+//							.apply(SetNbtFunction.setTag(nbt))));
 		}
 	}
 }

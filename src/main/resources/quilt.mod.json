@@ -18,8 +18,9 @@
 		},
 		"intermediate_mappings": "net.fabricmc:intermediary",
 		"entrypoints": {
-			"init": "io.github.tropheusj.magic_8_ball.Magic8Ball"
-		},
+			"init": "io.github.tropheusj.magic_8_ball.Magic8Ball",
+      "fabric-datagen": "io.github.tropheusj.magic_8_ball.data.Magic8BallDatagen"
+    },
 		"depends": [
 			{
 				"id": "quilt_loader",

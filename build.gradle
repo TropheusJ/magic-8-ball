@@ -33,6 +33,23 @@ dependencies {
 	modLocalRuntime("com.terraformersmc:modmenu:$mod_menu_version")
 }
 
+loom {
+	runs {
+		datagen {
+			client()
+
+			name "Data Generation"
+			vmArg "-Dfabric-api.datagen"
+			vmArg "-Dfabric-api.datagen.output-dir=${file("src/generated/resources")}"
+		}
+	}
+}
+
+sourceSets.main.resources {
+	srcDir("src/generated/resources")
+	exclude("src/generated/resources/.cache")
+}
+
 tasks.register("buildOrPublish") {
 	group = "build"
 	String mavenUser = System.getenv("MAVEN_USER")
