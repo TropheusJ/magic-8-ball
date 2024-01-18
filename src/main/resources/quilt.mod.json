@@ -2,23 +2,23 @@
 	"schema_version": 1,
 	"quilt_loader": {
 		"group": "io.github.tropheusj",
-		"id": "modid",
+		"id": "magic_8_ball",
 		"version": "${version}",
 		"metadata": {
-			"name": "Modid",
-			"description": "A short description of your mod.",
+			"name": "Magic 8 Ball",
+			"description": "Adds a Magic 8 Ball that you can ask any questions you desire.",
 			"contributors": {
 				"Tropheus Jay": "Owner"
 			},
 			"contact": {
-				"issues": "https://github.com/TropheusJ/quilt-template-mod/issues",
-				"sources": "https://github.com/TropheusJ/quilt-template-mod"
+				"issues": "https://github.com/TropheusJ/magic-8-ball/issues",
+				"sources": "https://github.com/TropheusJ/magic-8-ball"
 			},
-			"icon": "assets/modid/icon.png"
+			"icon": "assets/magic_8_ball/icon.png"
 		},
 		"intermediate_mappings": "net.fabricmc:intermediary",
 		"entrypoints": {
-			"init": "io.github.tropheusj.modid.ExampleMod"
+			"init": "io.github.tropheusj.magic_8_ball.Magic8Ball"
 		},
 		"depends": [
 			{
@@ -35,5 +35,5 @@
 			}
 		]
 	},
-	"mixin": "modid.mixins.json"
+	"mixin": "magic_8_ball.mixins.json"
 }

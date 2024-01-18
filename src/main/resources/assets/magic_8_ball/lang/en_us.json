@@ -1,0 +1,36 @@
+{
+  "item.magic_8_ball.magic_8_ball": "Magic 8 Ball",
+  "item.magic_8_ball.hemisphere": "Hemisphere",
+  "item.magic_8_ball.icosahedron": "Icosahedron",
+  "item.magic_8_ball.incomplete_icosahedron": "Incomplete Icosahedron",
+  "item.magic_8_ball.icosahedron_face": "Icosahedron Face",
+
+  "icosahedron.incomplete.faces": "Faces: %1$s / %2$s",
+
+  "magic_8_ball.response": "The Magic 8 Ball says: %s",
+  "magic_8_ball.no_response": "The Magic 8 Ball has nothing to say on the matter.",
+
+  "magic_8_ball.response.it_is_certain": "It is certain.",
+  "magic_8_ball.response.it_is_decidedly_so": "It is decidedly so.",
+  "magic_8_ball.response.without_a_doubt": "Without a doubt.",
+  "magic_8_ball.response.yes_definitely": "Yes, definitely.",
+  "magic_8_ball.response.you_may_rely_on_it": "You may rely on it.",
+
+  "magic_8_ball.response.as_i_see_it_yes": "As I see it, yes.",
+  "magic_8_ball.response.most_likely": "Most likely.",
+  "magic_8_ball.response.outlook_good": "Outlook good.",
+  "magic_8_ball.response.yes": "Yes.",
+  "magic_8_ball.response.signs_point_to_yes": "Signs point to yes.",
+
+  "magic_8_ball.response.reply_hazy_try_again": "Reply hazy, try again.",
+  "magic_8_ball.response.ask_again_later": "Ask again later.",
+  "magic_8_ball.response.better_not_tell_you_now": "Better not tell you now.",
+  "magic_8_ball.response.cannot_predict_now": "Cannot predict now.",
+  "magic_8_ball.response.concentrate_and_ask_again": "Concentrate and ask again.",
+
+  "magic_8_ball.response.dont_count_on_it": "Don't count on it.",
+  "magic_8_ball.response.my_reply_is_no": "My reply is no.",
+  "magic_8_ball.response.my_sources_say_no": "My sources say no.",
+  "magic_8_ball.response.outlook_not_so_good": "Outlook not so good.",
+  "magic_8_ball.response.very_doubtful": "Very doubtful."
+}
