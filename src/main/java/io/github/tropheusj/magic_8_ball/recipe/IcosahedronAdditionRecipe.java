@@ -71,6 +71,6 @@ public class IcosahedronAdditionRecipe extends BaseSpecialRecipe {
 	@Override
 	@NotNull
 	public RecipeSerializer<?> getSerializer() {
-		return null;
+		return SpecialRecipeSerializers.ICOSAHEDRON_ADDITION;
 	}
 }
