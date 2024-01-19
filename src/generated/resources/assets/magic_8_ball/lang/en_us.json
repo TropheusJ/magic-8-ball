@@ -206,5 +206,6 @@
   "magic_8_ball.response.standard.6": "Most likely.",
   "magic_8_ball.response.standard.7": "Outlook good.",
   "magic_8_ball.response.standard.8": "Yes.",
-  "magic_8_ball.response.standard.9": "Signs point to yes."
+  "magic_8_ball.response.standard.9": "Signs point to yes.",
+  "subtitles.magic_8_ball.ball_shake": "Magic 8 Ball shakes"
 }

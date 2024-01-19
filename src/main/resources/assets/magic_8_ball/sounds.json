@@ -1,0 +1,8 @@
+{
+  "ball_shake": {
+    "subtitle": "subtitles.magic_8_ball.ball_shake",
+    "sounds": [
+      "magic_8_ball:ball_shake"
+    ]
+  }
+}

@@ -22,6 +22,8 @@ public class Magic8BallLangProvider extends FabricLanguageProvider {
 		builder.add("icosahedron.incomplete.faces", "Faces: %1$s / %2$s");
 		builder.add("magic_8_ball.response", "The Magic 8 Ball says: %s");
 		builder.add("magic_8_ball.no_response", "The Magic 8 Ball has nothing to say on the matter.");
+
+		builder.add("subtitles.magic_8_ball.ball_shake", "Magic 8 Ball shakes");
 		// 8-ball presets
 		buildPreset(builder, BuiltInResponses.STANDARD);
 		buildPreset(builder, BuiltInResponses.RUDE);

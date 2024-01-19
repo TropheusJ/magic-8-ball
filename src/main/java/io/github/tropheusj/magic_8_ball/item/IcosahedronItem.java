@@ -2,6 +2,7 @@ package io.github.tropheusj.magic_8_ball.item;
 
 import io.github.tropheusj.magic_8_ball.Magic8Ball;
 import net.minecraft.network.chat.MutableComponent;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.player.Player;
@@ -32,6 +33,8 @@ public class IcosahedronItem extends Item {
 			face.setHoverName(response);
 			user.getInventory().placeItemBackInInventory(face);
 		}
+
+		user.playSound(SoundEvents.ITEM_FRAME_REMOVE_ITEM);
 
 		stack.shrink(1);
 		return InteractionResultHolder.success(stack);

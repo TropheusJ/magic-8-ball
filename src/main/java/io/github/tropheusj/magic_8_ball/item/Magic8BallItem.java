@@ -5,6 +5,7 @@ import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
@@ -66,15 +67,18 @@ public class Magic8BallItem extends Item {
 			}
 		}
 
+		user.playSound(SoundEvents.ITEM_FRAME_REMOVE_ITEM);
+
 		stack.shrink(1);
 		return InteractionResultHolder.success(stack);
 	}
 
 	protected InteractionResultHolder<ItemStack> answerPlayer(Player user, ItemStack stack, InteractionHand hand, RandomSource random) {
 		Component response = getResponse(stack, random);
-		user.getCooldowns().addCooldown(this, COOLDOWN_TICKS);
 		user.displayClientMessage(response, true);
 		user.swing(hand);
+		user.getCooldowns().addCooldown(this, COOLDOWN_TICKS);
+		user.playSound(Magic8Ball.BALL_SHAKE);
 		return InteractionResultHolder.success(stack);
 	}
 
